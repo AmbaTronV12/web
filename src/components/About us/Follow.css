@@ -1,0 +1,21 @@
+.follow-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it's on top */
+  }
+
+  .follow-content {
+    background-color: #FF8906;
+    border-radius: 20px;
+    width: 200px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }

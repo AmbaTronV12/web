@@ -1,0 +1,48 @@
+/* Modal.css */
+.contact-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it's on top */
+  }
+  
+  .contact-content {
+    background-color: #FF8906;
+    border-radius: 20px;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .contact-header{
+    background-color: #FF8906;
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+  }
+  
+  .contact-body{
+    background-color: white;
+    padding: 20px;
+    font-family: Inter;
+    font-size: 20px;
+  }

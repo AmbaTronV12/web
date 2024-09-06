@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+
+.background{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-image: url(../../assets/image\ 7.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;  
+}
+.textLogo{
+  font-family: Holtwood One Sc, serif;
+  font-size: 48px;
+  color: white;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  font-size: 20;
+  font-family: Inter;
+  color: white;
+  margin-left: 60%;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.mainText{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  color: white;
+  text-align: center;
+  margin-top: 7%;
+  
+}
+
+.centerText{
+  font-family: Inter;
+  font-size: 62px;
+  font-weight: bolder;
+}
+
+.mediumText{
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 500;
+  
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 150px;
+}
+
+.landingButton {
+    background-color: transparent;  
+    font-family: Inter;
+    font-weight: bold;
+    padding: 5px 30px;
+    border: 2px solid white;        
+    color: white;                   
+    font-size: 36px;                
+    cursor: pointer;
+    border-radius: 100px;             
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.landingButton:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly visible on hover */
+}
+
+.contactRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.contactImg{
+  width: 35px;
+  height: 35px;
+}
+
+.hometext {
+  font-size: 20;
+  text-decoration: none;
+  font-family: Inter;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.hometext:hover {
+  color: #ffcc00; /* Lighter orange on hover */
+}
