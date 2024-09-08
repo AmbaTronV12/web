@@ -1,7 +1,7 @@
 import React from "react";
 import './Follow.css'
 
-function follow({ isOpen, onClose, children }) {
+function follow({ position,isOpen, onClose, children }) {
     if (!isOpen) return null; // Render nothing if the modal is not open
 
   const handleOverlayClick = (e) => {
@@ -11,9 +11,16 @@ function follow({ isOpen, onClose, children }) {
   };
 
   return(
-    <div className="follow-overlay" onClick={handleOverlayClick}>
-      <div className="follow-content">
-            {children}
+    <div className="popup-background" onClick={onClose}>
+      <div
+        className="popup"
+        style={{
+          top: `${position.y}px`,
+          left: `${position.x}px`,
+        }}
+        onClick={handleOverlayClick}
+      >
+          {children} {/* Custom content */}
       </div>
     </div>
   )
